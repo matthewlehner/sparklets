@@ -1,6 +1,9 @@
 # Sparklets
 
-TODO: Write a gem description
+Asset pipeline gem for generating sparklets font for icons in Sparkle.
+
+Add new svgs to `icons/` and run `rake font:prepare` to build the font.
+
 
 ## Installation
 
@@ -18,12 +21,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Adding new svgs requires the installation of `svgo`. Just `brew install svgo`.
 
-## Contributing
+Configuration of font building options are handled in `icons/fontcustom.yml`
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Enjoy!
