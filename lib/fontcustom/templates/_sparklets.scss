@@ -1,0 +1,34 @@
+<%
+file_name = if @opts[:font_face_path]
+  File.join @opts[:font_face_path], @data[:file_name]
+else
+  @data[:file_name]
+end
+%>/*
+ * Font Custom: bare CSS
+ */
+
+@font-face {
+  font-family: "<%= @opts[:font_name] %>";
+  src: font-url("<%= file_name %>.eot");
+  src: font-url("<%= file_name %>.eot?#iefix") format("embedded-opentype"),
+       font-url("<%= file_name %>.woff") format("woff"),
+       font-url("<%= file_name %>.ttf") format("truetype"),
+       font-url("<%= file_name %>.svg#<%= @opts[:font_name] %>") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+<%= @data[:glyphs].map {|name| ".#{@opts[:css_prefix] + name}:before"}.join(",\n") %> {
+  font-family: "<%= @opts[:font_name] %>";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+<% @data[:glyphs].each_with_index do |name, index| %>
+.<%= @opts[:css_prefix] + name %>:before { content: "\<%= (61696+index).to_s(16) %>"; }<% end %>

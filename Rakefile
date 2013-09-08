@@ -16,13 +16,13 @@ namespace :font do
   end
 
   task :build_font do
-    # puts "Building font."
-    sh "fontcustom compile icons -o app/assets/fonts -t scss"
+    # Building font.
+    sh "fontcustom compile icons"
   end
 
   task :move_assets do
     # move stylesheet into place and clean up
     sh "rm app/assets/fonts/.fontcustom-data"
-    sh "mv app/assets/fonts/_fontcustom.scss app/assets/stylesheets"
+    sh "mv app/assets/fonts/_sparklets.scss app/assets/stylesheets/"
   end
 end
