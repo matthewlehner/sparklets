@@ -29,7 +29,7 @@ output: app/assets/fonts
 #
 # default: [ css, preview ]
 
-templates: [lib/fontcustom/templates/_sparklets.scss]
+templates: [preview, lib/fontcustom/templates/_sparklets.scss]
 
 # ---------------------------------------------------------------------------- #
 # Font Name
