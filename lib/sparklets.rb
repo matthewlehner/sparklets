@@ -1,5 +1,2 @@
 require "sparklets/version"
-
-module Sparklets
-  # Your code goes here...
-end
+require "sparklets/engine" if defined?(::Rails)
