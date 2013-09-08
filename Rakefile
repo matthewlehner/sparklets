@@ -4,9 +4,15 @@ namespace :font do
   desc "Create font"
   task prepare: [:minify_svgs, :build_font, :move_assets]
 
-  task :minify_svgs do
+  task minify_svgs: :check_svgo_dependency  do
     # Optimize svgs.
     sh "svgo -f icons --disable=removeViewBoxs"
+  end
+
+  task :check_svgo_dependency do
+    unless system("svgo --version")
+      fail "svgo doesn't seem to be installed."
+    end
   end
 
   task :build_font do
