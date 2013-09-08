@@ -19,7 +19,7 @@ end
   font-style: normal;
 }
 
-<%= @data[:glyphs].map {|name| ".#{@opts[:css_prefix] + name}:before"}.join(",\n") %> {
+%<%= @opts[:font_name] %>-icon {
   font-family: "<%= @opts[:font_name] %>";
   font-style: normal;
   font-weight: normal;
@@ -30,10 +30,17 @@ end
   display: inline-block;
   text-decoration: inherit;
 }
-<% @data[:glyphs].each_with_index do |name, index| %>
-%<%= @opts[:css_prefix] + name %>{ content : "\<%= (61696+index).to_s(16) %>"; }
 
-.<%= @opts[:css_prefix] + name %>:before {
-  @extend %<%= @opts[:css_prefix] + name %>;
+<% @data[:glyphs].each_with_index do |name, index| %>
+%<%= @opts[:css_prefix] + name %>{
+  content: "\<%= (61696+index).to_s(16) %>";
+}
+
+.<%= @opts[:css_prefix] + name %> {
+  @extend %<%= @opts[:font_name] %>-icon;
+
+  &:before {
+    @extend %<%= @opts[:css_prefix] + name %>;
+  }
 }
 <% end %>

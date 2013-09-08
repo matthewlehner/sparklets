@@ -13,41 +13,7 @@
   font-style: normal;
 }
 
-.icon-arrow-down:before,
-.icon-arrow-future:before,
-.icon-arrow-up:before,
-.icon-careerpost:before,
-.icon-connect-emailclosed:before,
-.icon-connect-facebook:before,
-.icon-connect-googleplus:before,
-.icon-connect-mailinglist:before,
-.icon-connect-twitter:before,
-.icon-connect-youtube:before,
-.icon-event:before,
-.icon-filter:before,
-.icon-healtharticle:before,
-.icon-large-email:before,
-.icon-large-facebook:before,
-.icon-large-googleplus:before,
-.icon-large-more:before,
-.icon-large-twitter:before,
-.icon-location:before,
-.icon-news:before,
-.icon-person:before,
-.icon-scripps-logo:before,
-.icon-search:before,
-.icon-service:before,
-.icon-small-cost:before,
-.icon-small-date:before,
-.icon-small-email:before,
-.icon-small-facebook:before,
-.icon-small-googleplus:before,
-.icon-small-more:before,
-.icon-small-new:before,
-.icon-small-time:before,
-.icon-small-twitter:before,
-.icon-small-video:before,
-.icon-trial:before {
+%sparklets-icon {
   font-family: "sparklets";
   font-style: normal;
   font-weight: normal;
@@ -59,213 +25,424 @@
   text-decoration: inherit;
 }
 
-%icon-arrow-down{ content : "\f100"; }
 
-.icon-arrow-down:before {
-  @extend %icon-arrow-down;
+%icon-arrow-down{
+  content: "\f100";
 }
 
-%icon-arrow-future{ content : "\f101"; }
+.icon-arrow-down {
+  @extend %sparklets-icon;
 
-.icon-arrow-future:before {
-  @extend %icon-arrow-future;
+  &:before {
+    @extend %icon-arrow-down;
+  }
 }
 
-%icon-arrow-up{ content : "\f102"; }
-
-.icon-arrow-up:before {
-  @extend %icon-arrow-up;
+%icon-arrow-future{
+  content: "\f101";
 }
 
-%icon-careerpost{ content : "\f103"; }
+.icon-arrow-future {
+  @extend %sparklets-icon;
 
-.icon-careerpost:before {
-  @extend %icon-careerpost;
+  &:before {
+    @extend %icon-arrow-future;
+  }
 }
 
-%icon-connect-emailclosed{ content : "\f104"; }
-
-.icon-connect-emailclosed:before {
-  @extend %icon-connect-emailclosed;
+%icon-arrow-up{
+  content: "\f102";
 }
 
-%icon-connect-facebook{ content : "\f105"; }
+.icon-arrow-up {
+  @extend %sparklets-icon;
 
-.icon-connect-facebook:before {
-  @extend %icon-connect-facebook;
+  &:before {
+    @extend %icon-arrow-up;
+  }
 }
 
-%icon-connect-googleplus{ content : "\f106"; }
-
-.icon-connect-googleplus:before {
-  @extend %icon-connect-googleplus;
+%icon-careerpost{
+  content: "\f103";
 }
 
-%icon-connect-mailinglist{ content : "\f107"; }
+.icon-careerpost {
+  @extend %sparklets-icon;
 
-.icon-connect-mailinglist:before {
-  @extend %icon-connect-mailinglist;
+  &:before {
+    @extend %icon-careerpost;
+  }
 }
 
-%icon-connect-twitter{ content : "\f108"; }
-
-.icon-connect-twitter:before {
-  @extend %icon-connect-twitter;
+%icon-connect-emailclosed{
+  content: "\f104";
 }
 
-%icon-connect-youtube{ content : "\f109"; }
+.icon-connect-emailclosed {
+  @extend %sparklets-icon;
 
-.icon-connect-youtube:before {
-  @extend %icon-connect-youtube;
+  &:before {
+    @extend %icon-connect-emailclosed;
+  }
 }
 
-%icon-event{ content : "\f10a"; }
-
-.icon-event:before {
-  @extend %icon-event;
+%icon-connect-facebook{
+  content: "\f105";
 }
 
-%icon-filter{ content : "\f10b"; }
+.icon-connect-facebook {
+  @extend %sparklets-icon;
 
-.icon-filter:before {
-  @extend %icon-filter;
+  &:before {
+    @extend %icon-connect-facebook;
+  }
 }
 
-%icon-healtharticle{ content : "\f10c"; }
-
-.icon-healtharticle:before {
-  @extend %icon-healtharticle;
+%icon-connect-googleplus{
+  content: "\f106";
 }
 
-%icon-large-email{ content : "\f10d"; }
+.icon-connect-googleplus {
+  @extend %sparklets-icon;
 
-.icon-large-email:before {
-  @extend %icon-large-email;
+  &:before {
+    @extend %icon-connect-googleplus;
+  }
 }
 
-%icon-large-facebook{ content : "\f10e"; }
-
-.icon-large-facebook:before {
-  @extend %icon-large-facebook;
+%icon-connect-mailinglist{
+  content: "\f107";
 }
 
-%icon-large-googleplus{ content : "\f10f"; }
+.icon-connect-mailinglist {
+  @extend %sparklets-icon;
 
-.icon-large-googleplus:before {
-  @extend %icon-large-googleplus;
+  &:before {
+    @extend %icon-connect-mailinglist;
+  }
 }
 
-%icon-large-more{ content : "\f110"; }
-
-.icon-large-more:before {
-  @extend %icon-large-more;
+%icon-connect-twitter{
+  content: "\f108";
 }
 
-%icon-large-twitter{ content : "\f111"; }
+.icon-connect-twitter {
+  @extend %sparklets-icon;
 
-.icon-large-twitter:before {
-  @extend %icon-large-twitter;
+  &:before {
+    @extend %icon-connect-twitter;
+  }
 }
 
-%icon-location{ content : "\f112"; }
-
-.icon-location:before {
-  @extend %icon-location;
+%icon-connect-youtube{
+  content: "\f109";
 }
 
-%icon-news{ content : "\f113"; }
+.icon-connect-youtube {
+  @extend %sparklets-icon;
 
-.icon-news:before {
-  @extend %icon-news;
+  &:before {
+    @extend %icon-connect-youtube;
+  }
 }
 
-%icon-person{ content : "\f114"; }
-
-.icon-person:before {
-  @extend %icon-person;
+%icon-event{
+  content: "\f10a";
 }
 
-%icon-scripps-logo{ content : "\f115"; }
+.icon-event {
+  @extend %sparklets-icon;
 
-.icon-scripps-logo:before {
-  @extend %icon-scripps-logo;
+  &:before {
+    @extend %icon-event;
+  }
 }
 
-%icon-search{ content : "\f116"; }
-
-.icon-search:before {
-  @extend %icon-search;
+%icon-filter{
+  content: "\f10b";
 }
 
-%icon-service{ content : "\f117"; }
+.icon-filter {
+  @extend %sparklets-icon;
 
-.icon-service:before {
-  @extend %icon-service;
+  &:before {
+    @extend %icon-filter;
+  }
 }
 
-%icon-small-cost{ content : "\f118"; }
-
-.icon-small-cost:before {
-  @extend %icon-small-cost;
+%icon-healtharticle{
+  content: "\f10c";
 }
 
-%icon-small-date{ content : "\f119"; }
+.icon-healtharticle {
+  @extend %sparklets-icon;
 
-.icon-small-date:before {
-  @extend %icon-small-date;
+  &:before {
+    @extend %icon-healtharticle;
+  }
 }
 
-%icon-small-email{ content : "\f11a"; }
-
-.icon-small-email:before {
-  @extend %icon-small-email;
+%icon-large-email{
+  content: "\f10d";
 }
 
-%icon-small-facebook{ content : "\f11b"; }
+.icon-large-email {
+  @extend %sparklets-icon;
 
-.icon-small-facebook:before {
-  @extend %icon-small-facebook;
+  &:before {
+    @extend %icon-large-email;
+  }
 }
 
-%icon-small-googleplus{ content : "\f11c"; }
-
-.icon-small-googleplus:before {
-  @extend %icon-small-googleplus;
+%icon-large-facebook{
+  content: "\f10e";
 }
 
-%icon-small-more{ content : "\f11d"; }
+.icon-large-facebook {
+  @extend %sparklets-icon;
 
-.icon-small-more:before {
-  @extend %icon-small-more;
+  &:before {
+    @extend %icon-large-facebook;
+  }
 }
 
-%icon-small-new{ content : "\f11e"; }
-
-.icon-small-new:before {
-  @extend %icon-small-new;
+%icon-large-googleplus{
+  content: "\f10f";
 }
 
-%icon-small-time{ content : "\f11f"; }
+.icon-large-googleplus {
+  @extend %sparklets-icon;
 
-.icon-small-time:before {
-  @extend %icon-small-time;
+  &:before {
+    @extend %icon-large-googleplus;
+  }
 }
 
-%icon-small-twitter{ content : "\f120"; }
-
-.icon-small-twitter:before {
-  @extend %icon-small-twitter;
+%icon-large-more{
+  content: "\f110";
 }
 
-%icon-small-video{ content : "\f121"; }
+.icon-large-more {
+  @extend %sparklets-icon;
 
-.icon-small-video:before {
-  @extend %icon-small-video;
+  &:before {
+    @extend %icon-large-more;
+  }
 }
 
-%icon-trial{ content : "\f122"; }
+%icon-large-twitter{
+  content: "\f111";
+}
 
-.icon-trial:before {
-  @extend %icon-trial;
+.icon-large-twitter {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-large-twitter;
+  }
+}
+
+%icon-location{
+  content: "\f112";
+}
+
+.icon-location {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-location;
+  }
+}
+
+%icon-news{
+  content: "\f113";
+}
+
+.icon-news {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-news;
+  }
+}
+
+%icon-person{
+  content: "\f114";
+}
+
+.icon-person {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-person;
+  }
+}
+
+%icon-scripps-logo{
+  content: "\f115";
+}
+
+.icon-scripps-logo {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-scripps-logo;
+  }
+}
+
+%icon-search{
+  content: "\f116";
+}
+
+.icon-search {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-search;
+  }
+}
+
+%icon-service{
+  content: "\f117";
+}
+
+.icon-service {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-service;
+  }
+}
+
+%icon-small-cost{
+  content: "\f118";
+}
+
+.icon-small-cost {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-cost;
+  }
+}
+
+%icon-small-date{
+  content: "\f119";
+}
+
+.icon-small-date {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-date;
+  }
+}
+
+%icon-small-email{
+  content: "\f11a";
+}
+
+.icon-small-email {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-email;
+  }
+}
+
+%icon-small-facebook{
+  content: "\f11b";
+}
+
+.icon-small-facebook {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-facebook;
+  }
+}
+
+%icon-small-googleplus{
+  content: "\f11c";
+}
+
+.icon-small-googleplus {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-googleplus;
+  }
+}
+
+%icon-small-more{
+  content: "\f11d";
+}
+
+.icon-small-more {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-more;
+  }
+}
+
+%icon-small-new{
+  content: "\f11e";
+}
+
+.icon-small-new {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-new;
+  }
+}
+
+%icon-small-time{
+  content: "\f11f";
+}
+
+.icon-small-time {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-time;
+  }
+}
+
+%icon-small-twitter{
+  content: "\f120";
+}
+
+.icon-small-twitter {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-twitter;
+  }
+}
+
+%icon-small-video{
+  content: "\f121";
+}
+
+.icon-small-video {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-small-video;
+  }
+}
+
+%icon-trial{
+  content: "\f122";
+}
+
+.icon-trial {
+  @extend %sparklets-icon;
+
+  &:before {
+    @extend %icon-trial;
+  }
 }
 
