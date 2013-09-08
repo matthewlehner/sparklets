@@ -2,13 +2,19 @@ require "bundler/gem_tasks"
 
 namespace :font do
   desc "Create font"
-  task :build do
+  task prepare: [:minify_svgs, :build_font, :move_assets]
+
+  task :minify_svgs do
     # Optimize svgs.
     sh "svgo -f icons --disable=removeViewBoxs"
+  end
 
+  task :build_font do
     # puts "Building font."
     sh "fontcustom compile icons -o app/assets/fonts -t scss"
+  end
 
+  task :move_assets do
     # move stylesheet into place and clean up
     sh "rm app/assets/fonts/.fontcustom-data"
     sh "mv app/assets/fonts/_fontcustom.scss app/assets/stylesheets"
