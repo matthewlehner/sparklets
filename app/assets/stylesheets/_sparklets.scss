@@ -1,5 +1,5 @@
 /*
- * Font Custom: bare CSS
+ * Font Custom: SCSS
  */
 
 @font-face {
@@ -59,38 +59,213 @@
   text-decoration: inherit;
 }
 
-.icon-arrow-down:before { content: "\f100"; }
-.icon-arrow-future:before { content: "\f101"; }
-.icon-arrow-up:before { content: "\f102"; }
-.icon-careerpost:before { content: "\f103"; }
-.icon-connect-emailclosed:before { content: "\f104"; }
-.icon-connect-facebook:before { content: "\f105"; }
-.icon-connect-googleplus:before { content: "\f106"; }
-.icon-connect-mailinglist:before { content: "\f107"; }
-.icon-connect-twitter:before { content: "\f108"; }
-.icon-connect-youtube:before { content: "\f109"; }
-.icon-event:before { content: "\f10a"; }
-.icon-filter:before { content: "\f10b"; }
-.icon-healtharticle:before { content: "\f10c"; }
-.icon-large-email:before { content: "\f10d"; }
-.icon-large-facebook:before { content: "\f10e"; }
-.icon-large-googleplus:before { content: "\f10f"; }
-.icon-large-more:before { content: "\f110"; }
-.icon-large-twitter:before { content: "\f111"; }
-.icon-location:before { content: "\f112"; }
-.icon-news:before { content: "\f113"; }
-.icon-person:before { content: "\f114"; }
-.icon-scripps-logo:before { content: "\f115"; }
-.icon-search:before { content: "\f116"; }
-.icon-service:before { content: "\f117"; }
-.icon-small-cost:before { content: "\f118"; }
-.icon-small-date:before { content: "\f119"; }
-.icon-small-email:before { content: "\f11a"; }
-.icon-small-facebook:before { content: "\f11b"; }
-.icon-small-googleplus:before { content: "\f11c"; }
-.icon-small-more:before { content: "\f11d"; }
-.icon-small-new:before { content: "\f11e"; }
-.icon-small-time:before { content: "\f11f"; }
-.icon-small-twitter:before { content: "\f120"; }
-.icon-small-video:before { content: "\f121"; }
-.icon-trial:before { content: "\f122"; }
+%icon-arrow-down{ content : "\f100"; }
+
+.icon-arrow-down:before {
+  @extend %icon-arrow-down;
+}
+
+%icon-arrow-future{ content : "\f101"; }
+
+.icon-arrow-future:before {
+  @extend %icon-arrow-future;
+}
+
+%icon-arrow-up{ content : "\f102"; }
+
+.icon-arrow-up:before {
+  @extend %icon-arrow-up;
+}
+
+%icon-careerpost{ content : "\f103"; }
+
+.icon-careerpost:before {
+  @extend %icon-careerpost;
+}
+
+%icon-connect-emailclosed{ content : "\f104"; }
+
+.icon-connect-emailclosed:before {
+  @extend %icon-connect-emailclosed;
+}
+
+%icon-connect-facebook{ content : "\f105"; }
+
+.icon-connect-facebook:before {
+  @extend %icon-connect-facebook;
+}
+
+%icon-connect-googleplus{ content : "\f106"; }
+
+.icon-connect-googleplus:before {
+  @extend %icon-connect-googleplus;
+}
+
+%icon-connect-mailinglist{ content : "\f107"; }
+
+.icon-connect-mailinglist:before {
+  @extend %icon-connect-mailinglist;
+}
+
+%icon-connect-twitter{ content : "\f108"; }
+
+.icon-connect-twitter:before {
+  @extend %icon-connect-twitter;
+}
+
+%icon-connect-youtube{ content : "\f109"; }
+
+.icon-connect-youtube:before {
+  @extend %icon-connect-youtube;
+}
+
+%icon-event{ content : "\f10a"; }
+
+.icon-event:before {
+  @extend %icon-event;
+}
+
+%icon-filter{ content : "\f10b"; }
+
+.icon-filter:before {
+  @extend %icon-filter;
+}
+
+%icon-healtharticle{ content : "\f10c"; }
+
+.icon-healtharticle:before {
+  @extend %icon-healtharticle;
+}
+
+%icon-large-email{ content : "\f10d"; }
+
+.icon-large-email:before {
+  @extend %icon-large-email;
+}
+
+%icon-large-facebook{ content : "\f10e"; }
+
+.icon-large-facebook:before {
+  @extend %icon-large-facebook;
+}
+
+%icon-large-googleplus{ content : "\f10f"; }
+
+.icon-large-googleplus:before {
+  @extend %icon-large-googleplus;
+}
+
+%icon-large-more{ content : "\f110"; }
+
+.icon-large-more:before {
+  @extend %icon-large-more;
+}
+
+%icon-large-twitter{ content : "\f111"; }
+
+.icon-large-twitter:before {
+  @extend %icon-large-twitter;
+}
+
+%icon-location{ content : "\f112"; }
+
+.icon-location:before {
+  @extend %icon-location;
+}
+
+%icon-news{ content : "\f113"; }
+
+.icon-news:before {
+  @extend %icon-news;
+}
+
+%icon-person{ content : "\f114"; }
+
+.icon-person:before {
+  @extend %icon-person;
+}
+
+%icon-scripps-logo{ content : "\f115"; }
+
+.icon-scripps-logo:before {
+  @extend %icon-scripps-logo;
+}
+
+%icon-search{ content : "\f116"; }
+
+.icon-search:before {
+  @extend %icon-search;
+}
+
+%icon-service{ content : "\f117"; }
+
+.icon-service:before {
+  @extend %icon-service;
+}
+
+%icon-small-cost{ content : "\f118"; }
+
+.icon-small-cost:before {
+  @extend %icon-small-cost;
+}
+
+%icon-small-date{ content : "\f119"; }
+
+.icon-small-date:before {
+  @extend %icon-small-date;
+}
+
+%icon-small-email{ content : "\f11a"; }
+
+.icon-small-email:before {
+  @extend %icon-small-email;
+}
+
+%icon-small-facebook{ content : "\f11b"; }
+
+.icon-small-facebook:before {
+  @extend %icon-small-facebook;
+}
+
+%icon-small-googleplus{ content : "\f11c"; }
+
+.icon-small-googleplus:before {
+  @extend %icon-small-googleplus;
+}
+
+%icon-small-more{ content : "\f11d"; }
+
+.icon-small-more:before {
+  @extend %icon-small-more;
+}
+
+%icon-small-new{ content : "\f11e"; }
+
+.icon-small-new:before {
+  @extend %icon-small-new;
+}
+
+%icon-small-time{ content : "\f11f"; }
+
+.icon-small-time:before {
+  @extend %icon-small-time;
+}
+
+%icon-small-twitter{ content : "\f120"; }
+
+.icon-small-twitter:before {
+  @extend %icon-small-twitter;
+}
+
+%icon-small-video{ content : "\f121"; }
+
+.icon-small-video:before {
+  @extend %icon-small-video;
+}
+
+%icon-trial{ content : "\f122"; }
+
+.icon-trial:before {
+  @extend %icon-trial;
+}
+
