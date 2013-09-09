@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2013-9-8: Created.
+2013-9-9: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Sun Sep  8 15:48:36 2013
+Created by FontForge 20120731 at Mon Sep  9 15:55:44 2013
  By Matthew Lehner
 Created by Matthew Lehner with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -27,8 +27,8 @@ Created by Matthew Lehner with FontForge 2.0 (http://fontforge.sf.net)
     <missing-glyph />
     <glyph glyph-name="uniF100" unicode="&#xf100;" 
 d="M0 414h512l-256 -444z" />
-    <glyph glyph-name="uniF101" unicode="&#xf101;" horiz-adv-x="241" 
-d="M0 -64l146 256l-146 256h95l146 -256l-146 -256h-95z" />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" horiz-adv-x="209" 
+d="M0 4l127 222l-127 222h83l126 -222l-126 -222h-83z" />
     <glyph glyph-name="uniF102" unicode="&#xf102;" 
 d="M512 -30h-512l256 444z" />
     <glyph glyph-name="uniF103" unicode="&#xf103;" horiz-adv-x="450" 
