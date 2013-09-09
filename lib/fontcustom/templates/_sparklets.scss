@@ -37,9 +37,8 @@ end
 }
 
 .<%= @opts[:css_prefix] + name %> {
-  @extend %<%= @opts[:font_name] %>-icon;
-
   &:before {
+    @extend %<%= @opts[:font_name] %>-icon;
     @extend %<%= @opts[:css_prefix] + name %>;
   }
 }
