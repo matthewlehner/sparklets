@@ -32,8 +32,13 @@ end
 }
 
 <% @data[:glyphs].each_with_index do |name, index| %>
-%<%= @opts[:css_prefix] + name %>{
+
+@mixin <%= @opts[:css_prefix] + name %> {
   content: "\<%= (61696+index).to_s(16) %>";
+}
+
+%<%= @opts[:css_prefix] + name %>{
+  @include <%= @opts[:css_prefix] + name %>;
 }
 
 .<%= @opts[:css_prefix] + name %> {

@@ -26,8 +26,13 @@
 }
 
 
-%icon-arrow-down{
+
+@mixin icon-arrow-down {
   content: "\f100";
+}
+
+%icon-arrow-down{
+  @include icon-arrow-down;
 }
 
 .icon-arrow-down {
@@ -37,8 +42,13 @@
   }
 }
 
-%icon-arrow-future{
+
+@mixin icon-arrow-future {
   content: "\f101";
+}
+
+%icon-arrow-future{
+  @include icon-arrow-future;
 }
 
 .icon-arrow-future {
@@ -48,8 +58,13 @@
   }
 }
 
-%icon-arrow-up{
+
+@mixin icon-arrow-up {
   content: "\f102";
+}
+
+%icon-arrow-up{
+  @include icon-arrow-up;
 }
 
 .icon-arrow-up {
@@ -59,8 +74,13 @@
   }
 }
 
-%icon-careerpost{
+
+@mixin icon-careerpost {
   content: "\f103";
+}
+
+%icon-careerpost{
+  @include icon-careerpost;
 }
 
 .icon-careerpost {
@@ -70,8 +90,13 @@
   }
 }
 
-%icon-connect-emailclosed{
+
+@mixin icon-connect-emailclosed {
   content: "\f104";
+}
+
+%icon-connect-emailclosed{
+  @include icon-connect-emailclosed;
 }
 
 .icon-connect-emailclosed {
@@ -81,8 +106,13 @@
   }
 }
 
-%icon-connect-facebook{
+
+@mixin icon-connect-facebook {
   content: "\f105";
+}
+
+%icon-connect-facebook{
+  @include icon-connect-facebook;
 }
 
 .icon-connect-facebook {
@@ -92,8 +122,13 @@
   }
 }
 
-%icon-connect-googleplus{
+
+@mixin icon-connect-googleplus {
   content: "\f106";
+}
+
+%icon-connect-googleplus{
+  @include icon-connect-googleplus;
 }
 
 .icon-connect-googleplus {
@@ -103,8 +138,13 @@
   }
 }
 
-%icon-connect-mailinglist{
+
+@mixin icon-connect-mailinglist {
   content: "\f107";
+}
+
+%icon-connect-mailinglist{
+  @include icon-connect-mailinglist;
 }
 
 .icon-connect-mailinglist {
@@ -114,8 +154,13 @@
   }
 }
 
-%icon-connect-twitter{
+
+@mixin icon-connect-twitter {
   content: "\f108";
+}
+
+%icon-connect-twitter{
+  @include icon-connect-twitter;
 }
 
 .icon-connect-twitter {
@@ -125,8 +170,13 @@
   }
 }
 
-%icon-connect-youtube{
+
+@mixin icon-connect-youtube {
   content: "\f109";
+}
+
+%icon-connect-youtube{
+  @include icon-connect-youtube;
 }
 
 .icon-connect-youtube {
@@ -136,8 +186,13 @@
   }
 }
 
-%icon-event{
+
+@mixin icon-event {
   content: "\f10a";
+}
+
+%icon-event{
+  @include icon-event;
 }
 
 .icon-event {
@@ -147,8 +202,13 @@
   }
 }
 
-%icon-filter{
+
+@mixin icon-filter {
   content: "\f10b";
+}
+
+%icon-filter{
+  @include icon-filter;
 }
 
 .icon-filter {
@@ -158,8 +218,13 @@
   }
 }
 
-%icon-healtharticle{
+
+@mixin icon-healtharticle {
   content: "\f10c";
+}
+
+%icon-healtharticle{
+  @include icon-healtharticle;
 }
 
 .icon-healtharticle {
@@ -169,8 +234,13 @@
   }
 }
 
-%icon-large-email{
+
+@mixin icon-large-email {
   content: "\f10d";
+}
+
+%icon-large-email{
+  @include icon-large-email;
 }
 
 .icon-large-email {
@@ -180,8 +250,13 @@
   }
 }
 
-%icon-large-facebook{
+
+@mixin icon-large-facebook {
   content: "\f10e";
+}
+
+%icon-large-facebook{
+  @include icon-large-facebook;
 }
 
 .icon-large-facebook {
@@ -191,8 +266,13 @@
   }
 }
 
-%icon-large-googleplus{
+
+@mixin icon-large-googleplus {
   content: "\f10f";
+}
+
+%icon-large-googleplus{
+  @include icon-large-googleplus;
 }
 
 .icon-large-googleplus {
@@ -202,8 +282,13 @@
   }
 }
 
-%icon-large-more{
+
+@mixin icon-large-more {
   content: "\f110";
+}
+
+%icon-large-more{
+  @include icon-large-more;
 }
 
 .icon-large-more {
@@ -213,8 +298,13 @@
   }
 }
 
-%icon-large-twitter{
+
+@mixin icon-large-twitter {
   content: "\f111";
+}
+
+%icon-large-twitter{
+  @include icon-large-twitter;
 }
 
 .icon-large-twitter {
@@ -224,8 +314,13 @@
   }
 }
 
-%icon-location{
+
+@mixin icon-location {
   content: "\f112";
+}
+
+%icon-location{
+  @include icon-location;
 }
 
 .icon-location {
@@ -235,8 +330,13 @@
   }
 }
 
-%icon-news{
+
+@mixin icon-news {
   content: "\f113";
+}
+
+%icon-news{
+  @include icon-news;
 }
 
 .icon-news {
@@ -246,8 +346,13 @@
   }
 }
 
-%icon-person{
+
+@mixin icon-person {
   content: "\f114";
+}
+
+%icon-person{
+  @include icon-person;
 }
 
 .icon-person {
@@ -257,8 +362,13 @@
   }
 }
 
-%icon-scripps-logo{
+
+@mixin icon-scripps-logo {
   content: "\f115";
+}
+
+%icon-scripps-logo{
+  @include icon-scripps-logo;
 }
 
 .icon-scripps-logo {
@@ -268,8 +378,13 @@
   }
 }
 
-%icon-search{
+
+@mixin icon-search {
   content: "\f116";
+}
+
+%icon-search{
+  @include icon-search;
 }
 
 .icon-search {
@@ -279,8 +394,13 @@
   }
 }
 
-%icon-service{
+
+@mixin icon-service {
   content: "\f117";
+}
+
+%icon-service{
+  @include icon-service;
 }
 
 .icon-service {
@@ -290,8 +410,13 @@
   }
 }
 
-%icon-small-cost{
+
+@mixin icon-small-cost {
   content: "\f118";
+}
+
+%icon-small-cost{
+  @include icon-small-cost;
 }
 
 .icon-small-cost {
@@ -301,8 +426,13 @@
   }
 }
 
-%icon-small-date{
+
+@mixin icon-small-date {
   content: "\f119";
+}
+
+%icon-small-date{
+  @include icon-small-date;
 }
 
 .icon-small-date {
@@ -312,8 +442,13 @@
   }
 }
 
-%icon-small-email{
+
+@mixin icon-small-email {
   content: "\f11a";
+}
+
+%icon-small-email{
+  @include icon-small-email;
 }
 
 .icon-small-email {
@@ -323,8 +458,13 @@
   }
 }
 
-%icon-small-facebook{
+
+@mixin icon-small-facebook {
   content: "\f11b";
+}
+
+%icon-small-facebook{
+  @include icon-small-facebook;
 }
 
 .icon-small-facebook {
@@ -334,8 +474,13 @@
   }
 }
 
-%icon-small-googleplus{
+
+@mixin icon-small-googleplus {
   content: "\f11c";
+}
+
+%icon-small-googleplus{
+  @include icon-small-googleplus;
 }
 
 .icon-small-googleplus {
@@ -345,8 +490,13 @@
   }
 }
 
-%icon-small-more{
+
+@mixin icon-small-more {
   content: "\f11d";
+}
+
+%icon-small-more{
+  @include icon-small-more;
 }
 
 .icon-small-more {
@@ -356,8 +506,13 @@
   }
 }
 
-%icon-small-new{
+
+@mixin icon-small-new {
   content: "\f11e";
+}
+
+%icon-small-new{
+  @include icon-small-new;
 }
 
 .icon-small-new {
@@ -367,8 +522,13 @@
   }
 }
 
-%icon-small-time{
+
+@mixin icon-small-time {
   content: "\f11f";
+}
+
+%icon-small-time{
+  @include icon-small-time;
 }
 
 .icon-small-time {
@@ -378,8 +538,13 @@
   }
 }
 
-%icon-small-twitter{
+
+@mixin icon-small-twitter {
   content: "\f120";
+}
+
+%icon-small-twitter{
+  @include icon-small-twitter;
 }
 
 .icon-small-twitter {
@@ -389,8 +554,13 @@
   }
 }
 
-%icon-small-video{
+
+@mixin icon-small-video {
   content: "\f121";
+}
+
+%icon-small-video{
+  @include icon-small-video;
 }
 
 .icon-small-video {
@@ -400,8 +570,13 @@
   }
 }
 
-%icon-trial{
+
+@mixin icon-trial {
   content: "\f122";
+}
+
+%icon-trial{
+  @include icon-trial;
 }
 
 .icon-trial {
