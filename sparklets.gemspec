@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["matthewlehner@gmail.com"]
   spec.description   = %q{Gem for building an icon font and letting the asset pipeline consume it}
   spec.summary       = %q{Icon font for the Sparkle Asset Pipeline}
-  spec.homepage      = "https://github.com/matthewlehner/sparklets"
+  spec.homepage      = "https://github.com/scripps/sparklets"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
