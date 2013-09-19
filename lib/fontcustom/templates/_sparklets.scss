@@ -19,7 +19,7 @@ end
   font-style: normal;
 }
 
-%<%= @opts[:font_name] %>-icon {
+@mixin <%= @opts[:font_name] %>-icon {
   font-family: "<%= @opts[:font_name] %>";
   font-style: normal;
   font-weight: normal;
@@ -29,6 +29,10 @@ end
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   text-decoration: inherit;
+}
+
+%<%= @opts[:font_name] %>-icon {
+  @include <%= @opts[:font_name] %>-icon;
 }
 
 <% @data[:glyphs].each_with_index do |name, index| %>

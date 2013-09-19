@@ -13,7 +13,7 @@
   font-style: normal;
 }
 
-%sparklets-icon {
+@mixin sparklets-icon {
   font-family: "sparklets";
   font-style: normal;
   font-weight: normal;
@@ -23,6 +23,10 @@
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   text-decoration: inherit;
+}
+
+%sparklets-icon {
+  @include sparklets-icon;
 }
 
 
