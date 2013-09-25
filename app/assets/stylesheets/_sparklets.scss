@@ -2,6 +2,14 @@
  * Font Custom: SCSS
  */
 
+
+@font-face {
+  font-family: "sparklets";
+  src: font-url("sparklets.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "sparklets";
   src: font-url("sparklets.eot");
@@ -28,7 +36,6 @@
 %sparklets-icon {
   @include sparklets-icon;
 }
-
 
 
 @mixin icon-arrow-down {
