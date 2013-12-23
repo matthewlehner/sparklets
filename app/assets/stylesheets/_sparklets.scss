@@ -597,3 +597,22 @@
   }
 }
 
+
+// =============
+// = Pinterest =
+// =============
+@mixin icon-small-pinterest {
+  content: "\f123";
+}
+
+%icon-small-pinterest{
+  @include icon-small-pinterest;
+}
+
+.icon-small-pinterest {
+  &:before {
+    @extend %sparklets-icon;
+    @extend %icon-small-pinterest;
+  }
+}
+
