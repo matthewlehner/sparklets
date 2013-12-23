@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "railties", ">= 3.2", "< 5.0"
 
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "fontcustom"
+  spec.add_development_dependency "fontcustom", "~> 1.0.0"
 end
