@@ -2,14 +2,6 @@
  * Font Custom: SCSS
  */
 
-
-@font-face {
-  font-family: "sparklets";
-  src: font-url("sparklets.eot");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @font-face {
   font-family: "sparklets";
   src: font-url("sparklets.eot");
@@ -36,6 +28,7 @@
 %sparklets-icon {
   @include sparklets-icon;
 }
+
 
 
 @mixin icon-arrow-down {
@@ -534,8 +527,24 @@
 }
 
 
-@mixin icon-small-time {
+@mixin icon-small-pinterest {
   content: "\f11f";
+}
+
+%icon-small-pinterest{
+  @include icon-small-pinterest;
+}
+
+.icon-small-pinterest {
+  &:before {
+    @extend %sparklets-icon;
+    @extend %icon-small-pinterest;
+  }
+}
+
+
+@mixin icon-small-time {
+  content: "\f120";
 }
 
 %icon-small-time{
@@ -551,7 +560,7 @@
 
 
 @mixin icon-small-twitter {
-  content: "\f120";
+  content: "\f121";
 }
 
 %icon-small-twitter{
@@ -567,7 +576,7 @@
 
 
 @mixin icon-small-video {
-  content: "\f121";
+  content: "\f122";
 }
 
 %icon-small-video{
@@ -583,7 +592,7 @@
 
 
 @mixin icon-trial {
-  content: "\f122";
+  content: "\f123";
 }
 
 %icon-trial{
@@ -594,25 +603,6 @@
   &:before {
     @extend %sparklets-icon;
     @extend %icon-trial;
-  }
-}
-
-
-// =============
-// = Pinterest =
-// =============
-@mixin icon-small-pinterest {
-  content: "\f123";
-}
-
-%icon-small-pinterest{
-  @include icon-small-pinterest;
-}
-
-.icon-small-pinterest {
-  &:before {
-    @extend %sparklets-icon;
-    @extend %icon-small-pinterest;
   }
 }
 
