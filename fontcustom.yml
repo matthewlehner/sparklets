@@ -24,8 +24,8 @@ debug: true
 #manifest: tmp/fontcustom
 
 input:
-  vectors: icons
-  templates: lib/templates
+  vectors: icons         # required
+  templates: lib/fontcustom/templates
 
 output:
   fonts: app/assets/fonts                              # required
@@ -43,4 +43,4 @@ output:
 #   referenced by their base file name.
 # --------------------------------------------------------------------------- #
 
-templates: [ "trying.scss" ]
+templates: [ "_sparklets.scss" ]
