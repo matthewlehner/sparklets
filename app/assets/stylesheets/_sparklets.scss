@@ -223,8 +223,40 @@
 }
 
 
-@mixin icon-healtharticle {
+@mixin icon-gear-preferences {
   content: "\f10c";
+}
+
+%icon-gear-preferences{
+  @include icon-gear-preferences;
+}
+
+.icon-gear-preferences {
+  &:before {
+    @extend %sparklets-icon;
+    @extend %icon-gear-preferences;
+  }
+}
+
+
+@mixin icon-gps {
+  content: "\f10d";
+}
+
+%icon-gps{
+  @include icon-gps;
+}
+
+.icon-gps {
+  &:before {
+    @extend %sparklets-icon;
+    @extend %icon-gps;
+  }
+}
+
+
+@mixin icon-healtharticle {
+  content: "\f10e";
 }
 
 %icon-healtharticle{
@@ -240,7 +272,7 @@
 
 
 @mixin icon-large-email {
-  content: "\f10d";
+  content: "\f10f";
 }
 
 %icon-large-email{
@@ -256,7 +288,7 @@
 
 
 @mixin icon-large-facebook {
-  content: "\f10e";
+  content: "\f110";
 }
 
 %icon-large-facebook{
@@ -272,7 +304,7 @@
 
 
 @mixin icon-large-googleplus {
-  content: "\f10f";
+  content: "\f111";
 }
 
 %icon-large-googleplus{
@@ -288,7 +320,7 @@
 
 
 @mixin icon-large-more {
-  content: "\f110";
+  content: "\f112";
 }
 
 %icon-large-more{
@@ -304,7 +336,7 @@
 
 
 @mixin icon-large-twitter {
-  content: "\f111";
+  content: "\f113";
 }
 
 %icon-large-twitter{
@@ -320,7 +352,7 @@
 
 
 @mixin icon-location {
-  content: "\f112";
+  content: "\f114";
 }
 
 %icon-location{
@@ -336,7 +368,7 @@
 
 
 @mixin icon-news {
-  content: "\f113";
+  content: "\f115";
 }
 
 %icon-news{
@@ -352,7 +384,7 @@
 
 
 @mixin icon-person {
-  content: "\f114";
+  content: "\f116";
 }
 
 %icon-person{
@@ -368,7 +400,7 @@
 
 
 @mixin icon-scripps-logo {
-  content: "\f115";
+  content: "\f117";
 }
 
 %icon-scripps-logo{
@@ -384,7 +416,7 @@
 
 
 @mixin icon-search {
-  content: "\f116";
+  content: "\f118";
 }
 
 %icon-search{
@@ -400,7 +432,7 @@
 
 
 @mixin icon-service {
-  content: "\f117";
+  content: "\f119";
 }
 
 %icon-service{
@@ -416,7 +448,7 @@
 
 
 @mixin icon-small-cost {
-  content: "\f118";
+  content: "\f11a";
 }
 
 %icon-small-cost{
@@ -432,7 +464,7 @@
 
 
 @mixin icon-small-date {
-  content: "\f119";
+  content: "\f11b";
 }
 
 %icon-small-date{
@@ -448,7 +480,7 @@
 
 
 @mixin icon-small-email {
-  content: "\f11a";
+  content: "\f11c";
 }
 
 %icon-small-email{
@@ -464,7 +496,7 @@
 
 
 @mixin icon-small-facebook {
-  content: "\f11b";
+  content: "\f11d";
 }
 
 %icon-small-facebook{
@@ -480,7 +512,7 @@
 
 
 @mixin icon-small-googleplus {
-  content: "\f11c";
+  content: "\f11e";
 }
 
 %icon-small-googleplus{
@@ -496,7 +528,7 @@
 
 
 @mixin icon-small-more {
-  content: "\f11d";
+  content: "\f11f";
 }
 
 %icon-small-more{
@@ -512,7 +544,7 @@
 
 
 @mixin icon-small-new {
-  content: "\f11e";
+  content: "\f120";
 }
 
 %icon-small-new{
@@ -528,7 +560,7 @@
 
 
 @mixin icon-small-pinterest {
-  content: "\f11f";
+  content: "\f121";
 }
 
 %icon-small-pinterest{
@@ -544,7 +576,7 @@
 
 
 @mixin icon-small-time {
-  content: "\f120";
+  content: "\f122";
 }
 
 %icon-small-time{
@@ -560,7 +592,7 @@
 
 
 @mixin icon-small-twitter {
-  content: "\f121";
+  content: "\f123";
 }
 
 %icon-small-twitter{
@@ -576,7 +608,7 @@
 
 
 @mixin icon-small-video {
-  content: "\f122";
+  content: "\f124";
 }
 
 %icon-small-video{
@@ -592,7 +624,7 @@
 
 
 @mixin icon-trial {
-  content: "\f123";
+  content: "\f125";
 }
 
 %icon-trial{

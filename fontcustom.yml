@@ -43,4 +43,4 @@ output:
 #   referenced by their base file name.
 # --------------------------------------------------------------------------- #
 
-templates: [ "_sparklets.scss" ]
+templates: [ preview, "_sparklets.scss" ]

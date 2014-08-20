@@ -1,0 +1,52 @@
+{
+  "fonts": [
+    "/Users/matthew/code/sparklets/app/assets/fonts/sparklets.ttf",
+    "/Users/matthew/code/sparklets/app/assets/fonts/sparklets.woff",
+    "/Users/matthew/code/sparklets/app/assets/fonts/sparklets.eot",
+    "/Users/matthew/code/sparklets/app/assets/fonts/sparklets.svg"
+  ],
+  "templates": [
+    "/Users/matthew/code/sparklets/app/views/styleguide/sparklets-preview.html",
+    "/Users/matthew/code/sparklets/app/assets/stylesheets/_sparklets.scss"
+  ],
+  "glyphs": [
+    "arrow-down",
+    "arrow-future",
+    "arrow-up",
+    "careerpost",
+    "connect-emailclosed",
+    "connect-facebook",
+    "connect-googleplus",
+    "connect-mailinglist",
+    "connect-twitter",
+    "connect-youtube",
+    "event",
+    "filter",
+    "gear-preferences",
+    "gps",
+    "healtharticle",
+    "large-email",
+    "large-facebook",
+    "large-googleplus",
+    "large-more",
+    "large-twitter",
+    "location",
+    "news",
+    "person",
+    "scripps-logo",
+    "search",
+    "service",
+    "small-cost",
+    "small-date",
+    "small-email",
+    "small-facebook",
+    "small-googleplus",
+    "small-more",
+    "small-new",
+    "small-pinterest",
+    "small-time",
+    "small-twitter",
+    "small-video",
+    "trial"
+  ]
+}
