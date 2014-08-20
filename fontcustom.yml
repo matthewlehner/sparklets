@@ -24,7 +24,7 @@ debug: true
 #manifest: tmp/fontcustom
 
 input:
-  vectors: icons         # required
+  vectors: icons/min       # required
   templates: lib/fontcustom/templates
 
 output:

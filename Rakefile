@@ -6,7 +6,7 @@ namespace :font do
 
   task minify_svgs: :check_svgo_dependency  do
     # Optimize svgs.
-    sh "svgo -f icons --disable=removeViewBox"
+    sh "svgo -f icons --output=icons/min --disable=removeViewBox"
   end
 
   task :check_svgo_dependency do
